@@ -1,0 +1,11 @@
+[package]
+name = "mev_demo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+artemis-core = { git = "https://github.com/paradigmxyz/artemis" }
+clap = { version = "4.2.5", features = ["derive"] }
+ethers = { version = "2", features = ["ws", "rustls"] }
+tokio = { version = "1.18", features = ["full"] }
+anyhow = "1.0.70"
